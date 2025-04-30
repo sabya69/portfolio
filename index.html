@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabyasachi Das Biswas | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00adb5;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #00adb5;
+    }
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 1rem;
+      border: 3px solid #00adb5;
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #00adb5;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .social a {
+      color: #00adb5;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .project-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-header">
+      <h1>Sabyasachi Das Biswas</h1>
+      <p>Techy Guy</p>
+      <img src="sabyasachi.jpeg" alt="Profile Photo" class="profile-pic">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="card" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Passionate about solving complex problems with efficient algorithms and scalable web solutions. I have a strong focus on Data Structures & Algorithms (DSA) and Web Development. With a solid foundation in programming and a keen eye for optimization, I love tackling coding challenges and building seamless user experiences.</p>
+    <p>JEE MAINS 2023 Qualified</p>
+  </section>
+
+  <section id="education" class="card" data-aos="fade-up">
+    <h2>Education</h2>
+    <p>B.Tech in Computer Science and Engineering<br />Tripura University<br />2023 - 2027</p>
+  </section>
+
+  <section id="skills" class="card" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>DSA in C++</li>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>C language</li>
+      <li>Java</li>
+      <li>Frontend Development</li>
+      <li>Web Development</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="card" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <a href="https://github.com/sabya69/todo-list" target="_blank"><strong>To-Do List Web App</strong></a>
+        <p>A simple to-do list application to manage tasks efficiently.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/sabya69/file.html" target="_blank"><strong>Menu Card Calculator</strong></a>
+        <p>An interactive food menu calculator using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/sabya69/weather" target="_blank"><strong>Weather Detection</strong></a>
+        <p>A web application to detect and display weather information using APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="card" data-aos="fade-up">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Attended MSME Entrepreneurship Program</li>
+      <li>Secured 4th Position in Fun Chemistry</li>
+      <li>Participated in IntellexAI - The Ideathon</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><a href="tel:6009671358" class="social">Call: 6009671358</a></p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/sabyasachi-das-biswas-a795b8245/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/sabya69" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sabyasachi Das Biswas</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
