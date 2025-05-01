@@ -89,14 +89,15 @@
     }
     .projects-grid {
       display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem; /* reduced gap */
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* smaller min width */
     }
     .project-card {
       background-color: #1a1a1a;
       border: 1px solid #333;
-      padding: 1rem;
-      border-radius: 10px;
+      padding: 0.8rem; /* smaller padding */
+      border-radius: 8px;
+      font-size: 0.95rem;
       transition: transform 0.2s;
     }
     .project-card:hover {
@@ -158,6 +159,10 @@
       <div class="project-card">
         <a href="https://github.com/sabya69/todo-list" target="_blank"><strong>To-Do List Web App</strong></a>
         <p>A simple to-do list application to manage tasks efficiently.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/sabya69/Blog-" target="_blank"><strong>Blog web App</strong></a>
+        <p>A simple Blog app which contains blog.</p>
       </div>
       <div class="project-card">
         <a href="https://github.com/sabya69/file.html" target="_blank"><strong>Menu Card Calculator</strong></a>
