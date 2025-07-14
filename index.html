@@ -7,115 +7,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background-color: #121212;
-      color: #f5f5f5;
-      font-size: 1.05rem;
-      line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      padding: 3rem 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #00adb5;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #f5f5f5;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #00adb5;
-    }
-    .profile-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-      border: 3px solid #00adb5;
-      transition: transform 0.3s ease;
-    }
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
-    section {
-      max-width: 1000px;
-      margin: 2rem auto;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: #00adb5;
-    }
-    ul {
-      list-style: none;
-      padding-left: 1rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .social a {
-      color: #00adb5;
-      margin-right: 1rem;
-      text-decoration: none;
-    }
-    .projects-grid {
-      display: grid;
-      gap: 1rem; /* reduced gap */
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* smaller min width */
-    }
-    .project-card {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 0.8rem; /* smaller padding */
-      border-radius: 8px;
-      font-size: 0.95rem;
-      transition: transform 0.2s;
-    }
-    .project-card:hover {
-      transform: scale(1.02);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      border-top: 1px solid #333;
-      font-size: 0.9rem;
-    }
-  </style>
+  
+    <link rel="stylesheet" href="style.css" />
+ 
 </head>
 <body>
   <header>
     <div class="profile-header">
       <h1>Sabyasachi Das Biswas</h1>
-      <p>Techy Guy</p>
+      <p>Full Stack Developer | AI Enthusiast | DSA Lover</p>
       <img src="sabyasachi.jpeg" alt="Profile Photo" class="profile-pic">
     </div>
     <nav>
@@ -128,63 +28,70 @@
     </nav>
   </header>
 
-  <section id="about" class="card" data-aos="fade-up">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>Passionate about solving complex problems with efficient algorithms and scalable web solutions. I have a strong focus on Data Structures & Algorithms (DSA) and Web Development. With a solid foundation in programming and a keen eye for optimization, I love tackling coding challenges and building seamless user experiences.</p>
-    <p>JEE MAINS 2023 Qualified</p>
+    <p>I am passionate about solving complex problems using efficient algorithms and developing scalable, intelligent web solutions. I specialize in Data Structures & Algorithms (DSA), Full Stack Web Development, and I’m actively diving into Artificial Intelligence and Machine Learning.</p>
+    <p>I qualified for JEE Mains 2023 and am currently pursuing a B.Tech in CSE. With strong fundamentals in backend development using Python and Node.js, I enjoy building projects and optimizing user experiences.</p>
   </section>
 
-  <section id="education" class="card" data-aos="fade-up">
+  <section id="education" data-aos="fade-up">
     <h2>Education</h2>
-    <p>B.Tech in Computer Science and Engineering<br />Tripura University<br />2023 - 2027</p>
+    <p><strong>B.Tech in Computer Science and Engineering</strong><br>Tripura University<br>2023 - 2027</p>
   </section>
 
-  <section id="skills" class="card" data-aos="fade-up">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
-      <li>DSA in C++</li>
-      <li>Python</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>C language</li>
-      <li>Java</li>
-      <li>Frontend Development</li>
-      <li>Web Development</li>
+      <li><strong>Languages:</strong> C++, Python, Java, C</li>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks & Tools:</strong> Node.js, Git, MongoDB</li>
+      <li><strong>Domains:</strong> Frontend, Backend, AI/ML</li>
     </ul>
   </section>
 
-  <section id="projects" class="card" data-aos="fade-up">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <a href="https://github.com/sabya69/todo-list" target="_blank"><strong>To-Do List Web App</strong></a>
-        <p>A simple to-do list application to manage tasks efficiently.</p>
+        <a href="https://github.com/sabya69/todo-list" target="_blank">To-Do List Web App</a>
+        <p>Manage tasks effectively with a clean UI built using JavaScript and localStorage.</p>
       </div>
       <div class="project-card">
-        <a href="https://github.com/sabya69/Blog-" target="_blank"><strong>Blog web App</strong></a>
-        <p>A simple Blog app which contains blog.</p>
+        <a href="https://github.com/sabya69/weather" target="_blank">Weather Detection</a>
+        <p>Fetch real-time weather using APIs with interactive display.</p>
       </div>
       <div class="project-card">
-        <a href="https://github.com/sabya69/file.html" target="_blank"><strong>Menu Card Calculator</strong></a>
-        <p>An interactive food menu calculator using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/sabya69/Web-Crawler-" target="_blank">Web Crawler</a>
+        <p>Extract structured data from websites using Python and BeautifulSoup.</p>
       </div>
       <div class="project-card">
-        <a href="https://github.com/sabya69/weather" target="_blank"><strong>Weather Detection</strong></a>
-        <p>A web application to detect and display weather information using APIs.</p>
+        <a href="https://github.com/sabya69/Study-Class" target="_blank">Study Class</a>
+        <p>Frontend UI project built with HTML, CSS, and JS for an educational platform.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/sabya69/Football-Game-Analysis" target="_blank">Football Game Analysis</a>
+        <p>YOLOv8-based player tracking and game insights through computer vision.</p>
       </div>
     </div>
   </section>
 
-  <section id="certifications" class="card" data-aos="fade-up">
+  <section id="certifications" data-aos="fade-up">
     <h2>Certifications & Achievements</h2>
     <ul>
-      <li>Attended MSME Entrepreneurship Program</li>
-      <li>Secured 4th Position in Fun Chemistry</li>
-      <li>Participated in IntellexAI - The Ideathon</li>
+      <li>MSME Entrepreneurship Program</li>
+      <li>4th Position in Fun Chemistry</li>
     </ul>
   </section>
 
-  <section id="contact" class="card" data-aos="fade-up">
+  <section id="Internship" data-aos="fade-up">
+    <h2>Internship</h2>
+    <ul>
+      <li>Summer Intern at Ministry of Electronics and Information Technology (2025)</li>
+      <li>Intern at National Institute of Technology, Agartala (2025)</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p><a href="tel:6009671358" class="social">Call: 6009671358</a></p>
     <div class="social">
@@ -194,10 +101,11 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Sabyasachi Das Biswas</p>
+    <p>&copy; 2025 Sabyasachi Das Biswas. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
+
 </html>
